@@ -88,7 +88,7 @@ var evenNumArr = [];
 
 for (var i = 0; i<100; i++){
    if (i%2 === 0){
-   evenNumArr.push(i);
+   evenNumArr.push(i); // console.log(i) printing out even numbers
 }
 }
 
@@ -118,6 +118,16 @@ Note that every odd index value in `oopsArray` is currently `undefined`. Using a
 [ 'turn' , 'nope' , 'down' , 'nope' , 'for' , 'nope' , 'what' ]
 */
 
+var oopsArray = ['turn', , 'down', , 'for', , 'what'];
+
+for (var i =0; i<oopsArray.length; i++){
+  if (i%2 === 1){
+    oopsArray[i] = 'nope';
+    
+  }
+}
+
+console.log(oopsArray);
 
 /* 8) Is It There Oops
 Using a for-loop, iterate through the Array stored at `oopsArray` backwards. Console.log your result. It should look like this:
