@@ -121,7 +121,10 @@ Note that every odd index value in `oopsArray` is currently `undefined`. Using a
 var oopsArray = ['turn', , 'down', , 'for', , 'what'];
 
 for (var i =0; i<oopsArray.length; i++){
+   //console.log(oopsArray[i]); odd index # are undefined
   if (i%2 === 1){
+     //console.log(i); prints position (1,3,5)
+     //console.log(oopsArray[i]); prints undefined
     oopsArray[i] = 'nope';
     
   }
@@ -140,6 +143,20 @@ down
 nope
 turn
 */
+
+// Easier way:
+// for (var i = 0; i<oopsArray.length; i++){
+//    oopsArray.reverse();
+// }
+
+// console.log(oopsArray);
+
+for (var i = oopsArray.length -1; i>=0; i--){
+   console.log(oopsArray[i]);
+}
+
+// need to add -1 so that we can start at the end of array 
+// >=0 because there's no negative positions in array, based off 0, i needs to be greater than 0
 
 
 /* 9) Siesta Time
